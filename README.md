@@ -6,6 +6,24 @@ A versão **3.1.0** continua a evolução do aplicativo desktop moderno desenvol
 
 ## Baixe o QBoa Digital 3.1
 
+## Histórico de versões
+
+### 3.1.0 — Mais visibilidade e controle
+- Inventário de capacidades e recursos detectados no Windows.
+- Gestão de serviços do Windows: consulta e ajustes compatíveis com as tarefas disponíveis, com registro do estado anterior para rollback quando reversíveis.
+- Resumo das tarefas de limpeza, com indicação de sucesso, falha ou cancelamento.
+- Aba **Sobre** com versão, autoria e QR Code Pix.
+- Melhorias nos diálogos de confirmação, diagnóstico de armazenamento e leitura opcional de temperatura da CPU com provedor compatível.
+
+### 3.0 — Nova geração desktop
+- Transição dos scripts BAT para um aplicativo desktop com Tauri e Rust.
+- Presets Express, Normal e Turbo.
+- Limpeza, ferramentas de privacidade e telemetria, DISM e SFC.
+- Confirmações para tarefas avançadas e proteções por pontos de restauração e rollback para alterações reversíveis.
+
+As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.1) ficam reservadas para correções pontuais.
+
+
 - **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-installer.exe)** — instalação tradicional.
 - **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-portable.exe)** — executável portátil, sem instalador.
 - [Notas da versão e demais arquivos](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.0)
