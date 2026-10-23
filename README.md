@@ -1,24 +1,32 @@
 # QBoa Digital
 
-Site oficial do QBoa Digital, um utilitário open source para limpeza, privacidade e manutenção do Windows 10 e 11.
+Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
 
-A versão **3.0** é a primeira versão estável do aplicativo desktop moderno, desenvolvido com Tauri e Rust, com interface em HTML, CSS e JavaScript. Ela dá continuidade ao projeto original, que começou com scripts BAT, agora em uma aplicação própria.
+A versão **3.1.0** continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
 
-## Baixe o QBoa Digital 3.0
+## Baixe o QBoa Digital 3.1
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.0/qboa-digital-3.0-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.0/qboa-digital-3.0-x64-portable.exe)** — executável portátil, sem instalador.
-- [Notas da versão e demais arquivos](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.0)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-portable.exe)** — executável portátil, sem instalador.
+- [Notas da versão e demais arquivos](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.0)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
 
-## O que oferece
+## Destaques da versão 3.1.0
+
+- **Inventário de capacidades do Windows:** identificação e organização dos recursos disponíveis no sistema.
+- **Catálogo de recursos e serviços:** informações organizadas para ajudar a entender melhor os componentes do Windows.
+- **Experiência de uso aprimorada:** interface e apresentação das informações refinadas.
+- **Área Sobre:** informações do projeto, versão e autoria, mantendo o QR Code Pix para quem quiser apoiar o desenvolvimento.
+- **Execução controlada de tarefas:** o backend Rust valida as tarefas solicitadas pela interface e registra as execuções.
+
+## Recursos do aplicativo
 
 - Limpeza de arquivos temporários e caches selecionados.
 - Ferramentas de privacidade e ajustes relacionados à telemetria.
 - Diagnóstico e manutenção do Windows com DISM e SFC.
 - Presets de execução Express, Normal e Turbo.
 - Proteções para operações avançadas, incluindo pontos de restauração quando disponíveis, snapshots e rollback para alterações reversíveis.
-- Execução e registro de tarefas pelo backend Rust, com controle de cancelamento.
+- Registro técnico e possibilidade de cancelar a execução de tarefas compatíveis.
 
 Operações como limpeza de arquivos, verificações e reparos do Windows não possuem rollback granular. A disponibilidade de pontos de restauração depende da configuração do próprio Windows. Leia as informações e confirmações apresentadas pelo aplicativo antes de executar tarefas avançadas.
 
@@ -29,7 +37,7 @@ As versões anteriores permanecem disponíveis para quem prefere os scripts orig
 - **[QBoa Digital 1.0 BAT](download/qboa-digital-1.0.zip)** — versão legada para rotinas simples.
 - **[QBoa Digital 2.0 BAT](download/qboa-digital-2.0.zip)** — evolução dos scripts com rotinas adicionais de otimização.
 
-O 3.0 é uma nova geração do projeto, não uma descontinuação da história do BAT: mantém o propósito original em um aplicativo desktop mais integrado.
+O 3.1.0 é uma nova geração do projeto, não uma descontinuação da história do BAT: mantém o propósito original em um aplicativo desktop mais integrado.
 
 ## Repositórios
 
