@@ -6,7 +6,7 @@ A versão **3.1.1** continua a evolução do aplicativo desktop moderno desenvol
 
 ## Baixe o QBoa Digital 3.1.1
 
-Os links de download abaixo continuam apontando para os binários publicados da versão 3.1.0. Os novos links da 3.1.1 serão adicionados assim que os arquivos da release forem publicados.
+A versão 3.1.1 já está publicada. Escolha o instalador tradicional ou o pacote portátil para Windows x64:
 
 ## Histórico de versões
 
@@ -32,9 +32,9 @@ Os links de download abaixo continuam apontando para os binários publicados da 
 As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.1) ficam reservadas para correções pontuais.
 
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-portable.exe)** — executável portátil, sem instalador.
-- [Notas da versão e demais arquivos](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.0)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.1/qboa-digital-3.1.1-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.1/qboa-digital-3.1.1-x64-portable.zip)** — pacote ZIP portátil; extraia todos os arquivos antes de executar.
+- [Notas da versão e arquivos da release 3.1.1](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.1)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
 
 ## Destaques da versão 3.1.1
