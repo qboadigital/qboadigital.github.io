@@ -1,8 +1,34 @@
 # QBoa Digital
 
+![QBoa Digital](assets/logo-CElQSUoM.png)
+
 Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
 
 A versão **3.1.1** continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
+
+## Galeria de screenshots
+
+Capturas de tela do aplicativo QBoa Digital 3.1.1. As imagens mantêm a transparência e a sombra original das janelas do Windows.
+
+<div align="center">
+  <img src="assets/limpeza.png" alt="Tela de limpeza do QBoa Digital" width="720" />
+  <p><strong>Limpeza</strong></p>
+</div>
+
+<div align="center">
+  <img src="assets/capacidades.png" alt="Inventário de capacidades do Windows no QBoa Digital" width="720" />
+  <p><strong>Capacidades do Windows</strong></p>
+</div>
+
+<div align="center">
+  <img src="assets/diagnóstico.png" alt="Tela de diagnóstico do QBoa Digital" width="720" />
+  <p><strong>Diagnóstico</strong></p>
+</div>
+
+<div align="center">
+  <img src="assets/serviços.png" alt="Gerenciamento de serviços do Windows no QBoa Digital" width="720" />
+  <p><strong>Serviços do Windows</strong></p>
+</div>
 
 ## Baixe o QBoa Digital 3.1.1
 
