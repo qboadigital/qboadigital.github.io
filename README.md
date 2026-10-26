@@ -2,11 +2,19 @@
 
 Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
 
-A versão **3.1.0** continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
+A versão **3.1.1** continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
 
-## Baixe o QBoa Digital 3.1
+## Baixe o QBoa Digital 3.1.1
+
+Os links de download abaixo continuam apontando para os binários publicados da versão 3.1.0. Os novos links da 3.1.1 serão adicionados assim que os arquivos da release forem publicados.
 
 ## Histórico de versões
+
+### 3.1.1 — Progresso e confirmações mais claras
+- Painel de progresso centralizado, com contraste aprimorado e comportamento indeterminado quando não há percentual real.
+- Confirmações e avisos de risco ficam em primeiro plano; o painel de progresso é ocultado enquanto há uma decisão pendente.
+- Bloqueio de tarefas concorrentes na interface e no backend Rust.
+- Descrições em linguagem simples para serviços conhecidos na prévia de ajustes.
 
 ### 3.1.0 — Mais visibilidade e controle
 - Inventário de capacidades e recursos detectados no Windows.
@@ -28,6 +36,13 @@ As próximas versões 3.x serão adicionadas a este histórico quando publicadas
 - **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.0/qboa-digital-3.1-x64-portable.exe)** — executável portátil, sem instalador.
 - [Notas da versão e demais arquivos](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.0)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
+
+## Destaques da versão 3.1.1
+
+- Painel de progresso e notificações com maior contraste.
+- Confirmações priorizadas sobre o progresso para evitar sobreposição.
+- Proteção contra execução simultânea de tarefas.
+- Descrições amigáveis na prévia de serviços.
 
 ## Destaques da versão 3.1.0
 
