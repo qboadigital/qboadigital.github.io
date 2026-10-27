@@ -4,11 +4,11 @@
 
 Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
 
-A versão **3.1.1** continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
+A versão **3.1.2** corrige a prévia heurística de serviços no Windows 11 IoT Enterprise LTSC e amplia a identificação transparente de fornecedores, mantendo a confirmação explícita antes de qualquer alteração. O projeto continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
 
 ## Galeria de screenshots
 
-Capturas de tela do aplicativo QBoa Digital 3.1.1. As imagens mantêm a transparência e a sombra original das janelas do Windows.
+Capturas de tela do aplicativo QBoa Digital 3.1.2. As imagens mantêm a transparência e a sombra original das janelas do Windows.
 
 <div align="center">
   <img src="assets/limpeza.png" alt="Tela de limpeza do QBoa Digital" width="720" />
@@ -30,11 +30,17 @@ Capturas de tela do aplicativo QBoa Digital 3.1.1. As imagens mantêm a transpar
   <p><strong>Serviços do Windows</strong></p>
 </div>
 
-## Baixe o QBoa Digital 3.1.1
+## Baixe o QBoa Digital 3.1.2
 
-A versão 3.1.1 já está publicada. Escolha o instalador tradicional ou o pacote portátil para Windows x64:
+A release 3.1.2 será disponibilizada para Windows x64 após a publicação da tag e a conclusão automática do build. Os links abaixo já apontam para os nomes finais dos arquivos:
 
 ## Histórico de versões
+
+### 3.1.2 — Prévia de serviços mais confiável
+- Corrige sugestões heurísticas de serviços no Windows 11 IoT Enterprise LTSC.
+- Só sugere ajustes quando o estado atual do serviço coincide com a referência do catálogo; divergências são ignoradas.
+- Identifica fornecedores conhecidos e mostra evidências, sem tratar a identificação como recomendação para desativar serviços.
+- Mantém prévia e confirmação explícita antes de aplicar mudanças.
 
 ### 3.1.1 — Progresso e confirmações mais claras
 - Painel de progresso centralizado, com contraste aprimorado e comportamento indeterminado quando não há percentual real.
@@ -55,13 +61,19 @@ A versão 3.1.1 já está publicada. Escolha o instalador tradicional ou o pacot
 - Limpeza, ferramentas de privacidade e telemetria, DISM e SFC.
 - Confirmações para tarefas avançadas e proteções por pontos de restauração e rollback para alterações reversíveis.
 
-As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.1) ficam reservadas para correções pontuais.
+As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.2) ficam reservadas para correções pontuais.
 
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.1/qboa-digital-3.1.1-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.1/qboa-digital-3.1.1-x64-portable.zip)** — pacote ZIP portátil; extraia todos os arquivos antes de executar.
-- [Notas da versão e arquivos da release 3.1.1](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.1)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.2/qboa-digital-3.1.2-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.2/qboa-digital-3.1.2-x64-portable.exe)** — executável portátil individual (.exe).
+- [Notas da versão e arquivos da release 3.1.2](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.2)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
+
+## Destaques da versão 3.1.2
+
+- Correção da prévia heurística de serviços em Windows 11 IoT Enterprise LTSC.
+- Sugestões limitadas aos serviços cujo estado atual corresponde à referência do catálogo.
+- Identificação transparente de fornecedores conhecidos, com evidências e confirmação explícita antes de qualquer alteração.
 
 ## Destaques da versão 3.1.1
 
