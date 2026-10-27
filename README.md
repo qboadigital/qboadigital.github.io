@@ -32,7 +32,7 @@ Capturas de tela do aplicativo QBoa Digital 3.1.2. As imagens mantêm a transpar
 
 ## Baixe o QBoa Digital 3.1.2
 
-A release 3.1.2 será disponibilizada para Windows x64 após a publicação da tag e a conclusão automática do build. Os links abaixo já apontam para os nomes finais dos arquivos:
+A versão 3.1.2 está publicada para Windows x64. Escolha o instalador tradicional ou o executável portátil individual:
 
 ## Histórico de versões
 
