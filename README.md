@@ -4,11 +4,11 @@
 
 Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
 
-A versão **3.1.2** corrige a prévia heurística de serviços no Windows 11 IoT Enterprise LTSC e amplia a identificação transparente de fornecedores, mantendo a confirmação explícita antes de qualquer alteração. O projeto continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e recursos organizados para facilitar a manutenção do sistema. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
+A versão **3.2.0** amplia os recursos de diagnóstico do QBoa Digital, com testes de integridade de RAM, carga e monitoramento térmico da CPU, estabilidade da GPU e laudos persistentes em JSON. O projeto continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e ferramentas independentes de diagnóstico, limpeza e manutenção. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
 
 ## Galeria de screenshots
 
-Capturas de tela do aplicativo QBoa Digital 3.1.2. As imagens mantêm a transparência e a sombra original das janelas do Windows.
+Capturas de tela do aplicativo QBoa Digital 3.2.0. As imagens mantêm a transparência e a sombra original das janelas do Windows.
 
 <div align="center">
   <img src="assets/limpeza.png" alt="Tela de limpeza do QBoa Digital" width="720" />
@@ -30,11 +30,20 @@ Capturas de tela do aplicativo QBoa Digital 3.1.2. As imagens mantêm a transpar
   <p><strong>Serviços do Windows</strong></p>
 </div>
 
-## Baixe o QBoa Digital 3.1.2
+## Baixe o QBoa Digital 3.2.0
 
-A versão 3.1.2 está publicada para Windows x64. Escolha o instalador tradicional ou o executável portátil individual:
+A versão 3.2.0 está publicada para Windows x64. Escolha o instalador tradicional ou o executável portátil individual:
 
 ## Histórico de versões
+
+### 3.2.0 — Diagnósticos avançados de hardware
+- Testes de integridade da RAM com perfis de execução, inventário dos módulos, progresso e cancelamento.
+- Teste de carga da CPU com monitoramento térmico e proteção contra condições inseguras.
+- Teste de estabilidade da GPU baseado em Direct3D 11 Compute Shader, com validação independente e proteção térmica.
+- Diagnóstico completo com aviso e confirmação prévios, progresso por etapa, cancelamento e resumo consolidado.
+- Laudos JSON versionados, histórico local e preservação de resultados parciais em execuções interrompidas.
+- Diagnósticos separados das ferramentas de limpeza e manutenção.
+
 
 ### 3.1.2 — Prévia de serviços mais confiável
 - Corrige sugestões heurísticas de serviços no Windows 11 IoT Enterprise LTSC.
@@ -64,10 +73,17 @@ A versão 3.1.2 está publicada para Windows x64. Escolha o instalador tradicion
 As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.2) ficam reservadas para correções pontuais.
 
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.2/qboa-digital-3.1.2-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.1.2/qboa-digital-3.1.2-x64-portable.exe)** — executável portátil individual (.exe).
-- [Notas da versão e arquivos da release 3.1.2](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.1.2)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.0/qboa-digital-3.2.0-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.0/qboa-digital-3.2.0-x64-portable.exe)** — executável portátil individual (.exe).
+- [Notas da versão e arquivos da release 3.2.0](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.0)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
+
+## Destaques da versão 3.2.0
+
+- Diagnósticos de RAM, CPU e GPU com acompanhamento da execução.
+- Laudos persistentes em JSON, histórico local e recuperação de resultados parciais.
+- Diagnóstico completo com resumo consolidado.
+- Separação entre diagnóstico de hardware e limpeza/manutenção.
 
 ## Destaques da versão 3.1.2
 
