@@ -4,11 +4,11 @@
 
 Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
 
-A versão **3.2.0** amplia os recursos de diagnóstico do QBoa Digital, com testes de integridade de RAM, carga e monitoramento térmico da CPU, estabilidade da GPU e laudos persistentes em JSON. O projeto continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e ferramentas independentes de diagnóstico, limpeza e manutenção. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
+A versão **3.2.1** consolida a limpeza do Windows em um motor nativo em Rust, com três níveis de execução e rotinas mais previsíveis. Mantém os diagnósticos de RAM, CPU e GPU introduzidos na 3.2.0, com laudos persistentes em JSON. O projeto continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e ferramentas independentes de diagnóstico, limpeza e manutenção. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
 
 ## Galeria de screenshots
 
-Capturas de tela do aplicativo QBoa Digital 3.2.0. As imagens mantêm a transparência e a sombra original das janelas do Windows.
+Capturas de tela do aplicativo QBoa Digital 3.2.1. As imagens mantêm a transparência e a sombra original das janelas do Windows.
 
 <div align="center">
   <img src="assets/limpeza.png" alt="Tela de limpeza do QBoa Digital" width="720" />
@@ -30,11 +30,19 @@ Capturas de tela do aplicativo QBoa Digital 3.2.0. As imagens mantêm a transpar
   <p><strong>Serviços do Windows</strong></p>
 </div>
 
-## Baixe o QBoa Digital 3.2.0
+## Baixe o QBoa Digital 3.2.1
 
-A versão 3.2.0 está publicada para Windows x64. Escolha o instalador tradicional ou o executável portátil individual:
+A versão 3.2.1 está publicada para Windows x64. Escolha o instalador tradicional ou o executável portátil individual:
 
 ## Histórico de versões
+
+### 3.2.1 — Limpeza nativa e níveis de execução
+- Substitui a dependência do Cleanmgr e de scripts PowerShell por rotinas próprias em Rust para as áreas de limpeza cobertas.
+- Organiza a limpeza em três níveis: leve, intermediário e pesado, com escopo e impacto crescentes.
+- Limpeza leve focada em temporários e caches comuns; intermediária inclui downloads do Windows Update e caches Adobe conhecidos.
+- Limpeza pesada reúne rotinas avançadas, resíduos de falhas e manutenção DISM/SFC.
+- Rebase com `/ResetBase` é opcional e só executado em ambientes compatíveis; em sistemas modificados, restritivos ou incertos, é ignorado para preservar possibilidades de rollback.
+- Mantém verificações conservadoras para resíduos de instalação do Windows e evita remover arquivos quando o estado do sistema não é conclusivo.
 
 ### 3.2.0 — Diagnósticos avançados de hardware
 - Testes de integridade da RAM com perfis de execução, inventário dos módulos, progresso e cancelamento.
@@ -73,10 +81,18 @@ A versão 3.2.0 está publicada para Windows x64. Escolha o instalador tradicion
 As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.2) ficam reservadas para correções pontuais.
 
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.0/qboa-digital-3.2.0-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.0/qboa-digital-3.2.0-x64-portable.exe)** — executável portátil individual (.exe).
-- [Notas da versão e arquivos da release 3.2.0](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.0)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-portable.exe)** — executável portátil individual (.exe).
+- [Notas da versão e arquivos da release 3.2.1](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.1)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
+
+## Destaques da versão 3.2.1
+
+- Motor de limpeza nativo em Rust, sem depender do Cleanmgr para as rotinas implementadas.
+- Três níveis de limpeza com escopo definido: leve, intermediário e pesado.
+- Caches conhecidos de navegadores e Adobe, arquivos temporários e downloads do Windows Update.
+- Limpeza pesada com DISM/SFC e controles adicionais para operações potencialmente destrutivas.
+- `/ResetBase` opcional e condicionado à compatibilidade do ambiente.
 
 ## Destaques da versão 3.2.0
 
