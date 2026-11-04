@@ -8,8 +8,22 @@ O aplicativo desktop é desenvolvido com **Tauri e Rust**. Limpeza e diagnóstic
 
 ## Situação da versão
 
-- **3.2.1 — publicada:** versão estável disponível para Windows x64.
-- **3.2.2 — em preparação:** ajustes de experiência e acompanhamento das operações. O build ainda está em validação; por isso, os botões de download continuam apontando para a 3.2.1.
+- **3.2.2 — publicada:** versão estável disponível para Windows x64.
+- **3.2.1 — publicada:** versão anterior, disponível no histórico de releases.
+
+## Roadmap — QBoa Pro 3.3
+
+A 3.3 está em desenvolvimento. O foco é transformar o QBoa em uma bancada de ferramentas técnicas para diagnóstico, manutenção e personalização do Windows — sem misturar diagnóstico com limpeza.
+
+- **Inventário técnico completo:** hardware, Windows, componentes, drivers e informações úteis para atendimento.
+- **Diagnóstico de rede:** reunir verificações e informações de conectividade para ajudar a localizar problemas.
+- **Central de reparo do Windows:** fluxos guiados para SFC, DISM e Windows Update, com explicações, confirmação e registro da execução.
+- **Auditoria de programas e inicialização:** inventário e análise; nesta etapa, sem automação de remoção.
+- **Personalização de componentes do Windows:** opções de configuração com prévia e controle.
+- **Laudo em PDF personalizado:** relatório técnico com logo do profissional/empresa e informações OEM.
+- **Atualização assistida do QBoa:** facilitar a manutenção da própria ferramenta.
+
+A ideia é lançar uma base sólida e segura. Auditoria de drivers, comparação de inventários, backup/restauração de configurações e auditoria de segurança ficam como possíveis incrementos posteriores; gestão de ordens de serviço e clientes é uma etapa futura, não promessa da 3.3. Escopo e ordem podem mudar conforme validação.
 
 ## Galeria
 
@@ -37,18 +51,18 @@ Capturas das principais áreas do QBoa Digital. As imagens preservam a transpar�
 
 ## Baixe a versão estável
 
-A **3.2.1** é a versão publicada neste momento. Escolha como prefere levar o QBoa:
+A **3.2.2** é a versão publicada neste momento. Escolha como prefere levar o QBoa:
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-portable.exe)** — um executável individual, sem ZIP para descompactar.
-- [Notas e arquivos da release 3.2.1](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.1)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.2/qboa-digital-3.2.2-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.2/qboa-digital-3.2.2-x64-portable.exe)** — um executável individual, sem ZIP para descompactar.
+- [Notas e arquivos da release 3.2.2](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.2)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
 
-> A 3.2.2 já está sendo preparada, mas ainda não foi publicada. Sem botão apontando para arquivo que não existe — aqui a gente não faz invocação de instalador. 😉
+> A 3.2.2 já está publicada. Agora sim, pode baixar sem invocar erro 404. 😉
 
 ## Histórico de versões
 
-### 3.2.2 — Mais fluidez e personalidade *(em preparação)*
+### 3.2.2 — Mais fluidez e personalidade *(publicada em 04/11/2026)*
 
 Esta atualização é um polimento da experiência de uso, não uma leva de funcionalidades novas:
 
@@ -59,7 +73,7 @@ Esta atualização é um polimento da experiência de uso, não uma leva de func
 - Frases especiais e easter eggs ocasionais — incluindo a participação honorária do QBoa e do dízimo. 😄
 - Animações discretas, respeitando a preferência do Windows por movimento reduzido.
 
-**Status:** build em validação. Os downloads acima permanecem na 3.2.1 até a publicação oficial.
+**Status:** publicada. Os downloads acima já apontam para a 3.2.2.
 
 ### 3.2.1 — Limpeza nativa e níveis de execução
 
