@@ -1,14 +1,19 @@
-# QBoa Digital
+# QBoa Digital — hotsite oficial
 
 ![QBoa Digital](assets/logo-CElQSUoM.png)
 
-Site oficial do **QBoa Digital**, um utilitário open source para limpeza, privacidade, diagnóstico e manutenção do Windows 10 e 11.
+O **QBoa Digital** é um utilitário open source para Windows 10 e 11 que reúne limpeza, privacidade, manutenção e diagnósticos de hardware. A ideia é simples: deixar o usuário no comando, explicar o que vai acontecer e evitar aquela faxina que começa tirando poeira e termina derrubando a parede. 😄
 
-A versão **3.2.1** consolida a limpeza do Windows em um motor nativo em Rust, com três níveis de execução e rotinas mais previsíveis. Mantém os diagnósticos de RAM, CPU e GPU introduzidos na 3.2.0, com laudos persistentes em JSON. O projeto continua a evolução do aplicativo desktop moderno desenvolvido com Tauri e Rust, com interface própria e ferramentas independentes de diagnóstico, limpeza e manutenção. O projeto começou com scripts BAT e hoje também oferece uma aplicação desktop integrada, mantendo acessíveis as versões legadas.
+O aplicativo desktop é desenvolvido com **Tauri e Rust**. Limpeza e diagnóstico são áreas independentes: uma coisa não se mistura com a outra, e os resultados dos diagnósticos ficam guardados em laudos JSON persistentes.
 
-## Galeria de screenshots
+## Situação da versão
 
-Capturas de tela do aplicativo QBoa Digital 3.2.1. As imagens mantêm a transparência e a sombra original das janelas do Windows.
+- **3.2.1 — publicada:** versão estável disponível para Windows x64.
+- **3.2.2 — em preparação:** ajustes de experiência e acompanhamento das operações. O build ainda está em validação; por isso, os botões de download continuam apontando para a 3.2.1.
+
+## Galeria
+
+Capturas das principais áreas do QBoa Digital. As imagens preservam a transparência e a sombra originais das janelas do Windows.
 
 <div align="center">
   <img src="assets/limpeza.png" alt="Tela de limpeza do QBoa Digital" width="720" />
@@ -30,129 +35,104 @@ Capturas de tela do aplicativo QBoa Digital 3.2.1. As imagens mantêm a transpar
   <p><strong>Serviços do Windows</strong></p>
 </div>
 
-## Baixe o QBoa Digital 3.2.1
+## Baixe a versão estável
 
-A versão 3.2.1 está publicada para Windows x64. Escolha o instalador tradicional ou o executável portátil individual:
+A **3.2.1** é a versão publicada neste momento. Escolha como prefere levar o QBoa:
+
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-portable.exe)** — um executável individual, sem ZIP para descompactar.
+- [Notas e arquivos da release 3.2.1](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.1)
+- [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
+
+> A 3.2.2 já está sendo preparada, mas ainda não foi publicada. Sem botão apontando para arquivo que não existe — aqui a gente não faz invocação de instalador. 😉
 
 ## Histórico de versões
 
-### 3.2.1 — Limpeza nativa e níveis de execução
-- Substitui a dependência do Cleanmgr e de scripts PowerShell por rotinas próprias em Rust para as áreas de limpeza cobertas.
-- Organiza a limpeza em três níveis: leve, intermediário e pesado, com escopo e impacto crescentes.
-- Limpeza leve focada em temporários e caches comuns; intermediária inclui downloads do Windows Update e caches Adobe conhecidos.
-- Limpeza pesada reúne rotinas avançadas, resíduos de falhas e manutenção DISM/SFC.
-- Rebase com `/ResetBase` é opcional e só executado em ambientes compatíveis; em sistemas modificados, restritivos ou incertos, é ignorado para preservar possibilidades de rollback.
-- Mantém verificações conservadoras para resíduos de instalação do Windows e evita remover arquivos quando o estado do sistema não é conclusivo.
+### 3.2.2 — Mais fluidez e personalidade *(em preparação)*
 
-### 3.2.0 — Diagnósticos avançados de hardware
-- Testes de integridade da RAM com perfis de execução, inventário dos módulos, progresso e cancelamento.
-- Teste de carga da CPU com monitoramento térmico e proteção contra condições inseguras.
-- Teste de estabilidade da GPU baseado em Direct3D 11 Compute Shader, com validação independente e proteção térmica.
+Esta atualização é um polimento da experiência de uso, não uma leva de funcionalidades novas:
+
+- Registro de Atividades com altura redimensionável, persistida entre execuções.
+- Alça de redimensionamento com suporte a teclado e comportamento mais intuitivo.
+- Progresso das operações também indicado no ícone do QBoa na barra de tarefas do Windows.
+- Mensagens variadas em cada etapa, com cinco opções por categoria para evitar a sensação de replay.
+- Frases especiais e easter eggs ocasionais — incluindo a participação honorária do QBoa e do dízimo. 😄
+- Animações discretas, respeitando a preferência do Windows por movimento reduzido.
+
+**Status:** build em validação. Os downloads acima permanecem na 3.2.1 até a publicação oficial.
+
+### 3.2.1 — Limpeza nativa e níveis de execução
+
+- Substitui a dependência do Cleanmgr e de scripts PowerShell por rotinas próprias em Rust nas áreas de limpeza implementadas.
+- Organiza a faxina em três níveis: **leve, intermediário e pesado**, com escopo e impacto crescentes.
+- Limpeza leve focada em temporários e caches comuns; a intermediária também inclui downloads do Windows Update e caches Adobe conhecidos.
+- Limpeza pesada reúne rotinas avançadas, resíduos de falhas e manutenção DISM/SFC.
+- Rebase com `/ResetBase` é opcional e condicionado à compatibilidade do ambiente. Em sistemas modificados, restritivos ou incertos, a operação é ignorada para preservar possibilidades de rollback.
+- Verificações conservadoras evitam remover arquivos quando o estado do sistema não é conclusivo.
+
+### 3.2.0 — Diagnósticos de hardware
+
+- Testes próprios de integridade da memória RAM, com perfis de execução, inventário dos módulos, progresso e cancelamento.
+- Teste de carga da CPU com monitoramento térmico opcional e proteção contra condições inseguras.
+- Teste de estabilidade da GPU baseado em Direct3D 11 Compute Shader, com validação independente e proteções térmicas.
 - Diagnóstico completo com aviso e confirmação prévios, progresso por etapa, cancelamento e resumo consolidado.
 - Laudos JSON versionados, histórico local e preservação de resultados parciais em execuções interrompidas.
-- Diagnósticos separados das ferramentas de limpeza e manutenção.
-
+- Diagnósticos separados das ferramentas de limpeza e manutenção. Cada coisa no seu quadrado — e cada laudo no seu lugar.
 
 ### 3.1.2 — Prévia de serviços mais confiável
+
 - Corrige sugestões heurísticas de serviços no Windows 11 IoT Enterprise LTSC.
 - Só sugere ajustes quando o estado atual do serviço coincide com a referência do catálogo; divergências são ignoradas.
-- Identifica fornecedores conhecidos e mostra evidências, sem tratar a identificação como recomendação para desativar serviços.
+- Identifica fornecedores conhecidos e apresenta evidências, sem transformar identificação em recomendação automática para desativar serviços.
 - Mantém prévia e confirmação explícita antes de aplicar mudanças.
 
 ### 3.1.1 — Progresso e confirmações mais claras
+
 - Painel de progresso centralizado, com contraste aprimorado e comportamento indeterminado quando não há percentual real.
-- Confirmações e avisos de risco ficam em primeiro plano; o painel de progresso é ocultado enquanto há uma decisão pendente.
+- Confirmações e avisos de risco ficam em primeiro plano; o progresso não disputa atenção com uma decisão pendente.
 - Bloqueio de tarefas concorrentes na interface e no backend Rust.
 - Descrições em linguagem simples para serviços conhecidos na prévia de ajustes.
 
 ### 3.1.0 — Mais visibilidade e controle
+
 - Inventário de capacidades e recursos detectados no Windows.
-- Gestão de serviços do Windows: consulta e ajustes compatíveis com as tarefas disponíveis, com registro do estado anterior para rollback quando reversíveis.
-- Resumo das tarefas de limpeza, com indicação de sucesso, falha ou cancelamento.
+- Consulta e ajustes de serviços compatíveis, com registro do estado anterior para rollback quando reversíveis.
+- Resumo das tarefas de limpeza com indicação de sucesso, falha ou cancelamento.
 - Aba **Sobre** com versão, autoria e QR Code Pix.
-- Melhorias nos diálogos de confirmação, diagnóstico de armazenamento e leitura opcional de temperatura da CPU com provedor compatível.
+- Melhorias nos diálogos de confirmação, no diagnóstico de armazenamento e na leitura opcional de temperatura da CPU com provedor compatível.
 
 ### 3.0 — Nova geração desktop
+
 - Transição dos scripts BAT para um aplicativo desktop com Tauri e Rust.
-- Presets Express, Normal e Turbo.
+- Primeira organização das rotinas de manutenção em sequências de execução.
 - Limpeza, ferramentas de privacidade e telemetria, DISM e SFC.
 - Confirmações para tarefas avançadas e proteções por pontos de restauração e rollback para alterações reversíveis.
 
-As próximas versões 3.x serão adicionadas a este histórico quando publicadas. Versões de patch (por exemplo, 3.1.2) ficam reservadas para correções pontuais.
+## O que o aplicativo reúne
 
-
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.1/qboa-digital-3.2.1-x64-portable.exe)** — executável portátil individual (.exe).
-- [Notas da versão e arquivos da release 3.2.1](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.1)
-- [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
-
-## Destaques da versão 3.2.1
-
-- Motor de limpeza nativo em Rust, sem depender do Cleanmgr para as rotinas implementadas.
-- Três níveis de limpeza com escopo definido: leve, intermediário e pesado.
-- Caches conhecidos de navegadores e Adobe, arquivos temporários e downloads do Windows Update.
-- Limpeza pesada com DISM/SFC e controles adicionais para operações potencialmente destrutivas.
-- `/ResetBase` opcional e condicionado à compatibilidade do ambiente.
-
-## Destaques da versão 3.2.0
-
-- Diagnósticos de RAM, CPU e GPU com acompanhamento da execução.
-- Laudos persistentes em JSON, histórico local e recuperação de resultados parciais.
-- Diagnóstico completo com resumo consolidado.
-- Separação entre diagnóstico de hardware e limpeza/manutenção.
-
-## Destaques da versão 3.1.2
-
-- Correção da prévia heurística de serviços em Windows 11 IoT Enterprise LTSC.
-- Sugestões limitadas aos serviços cujo estado atual corresponde à referência do catálogo.
-- Identificação transparente de fornecedores conhecidos, com evidências e confirmação explícita antes de qualquer alteração.
-
-## Destaques da versão 3.1.1
-
-- Painel de progresso e notificações com maior contraste.
-- Confirmações priorizadas sobre o progresso para evitar sobreposição.
-- Proteção contra execução simultânea de tarefas.
-- Descrições amigáveis na prévia de serviços.
-
-## Destaques da versão 3.1.0
-
-- **Inventário de capacidades do Windows:** identificação e organização dos recursos disponíveis no sistema.
-- **Catálogo de recursos e serviços:** informações organizadas para ajudar a entender melhor os componentes do Windows.
-- **Experiência de uso aprimorada:** interface e apresentação das informações refinadas.
-- **Área Sobre:** informações do projeto, versão e autoria, mantendo o QR Code Pix para quem quiser apoiar o desenvolvimento.
-- **Execução controlada de tarefas:** o backend Rust valida as tarefas solicitadas pela interface e registra as execuções.
-
-## Recursos do aplicativo
-
-- Limpeza de arquivos temporários e caches selecionados.
+- Limpeza de arquivos temporários e caches selecionados, organizada por níveis.
 - Ferramentas de privacidade e ajustes relacionados à telemetria.
-- Diagnóstico e manutenção do Windows com DISM e SFC.
-- Presets de execução Express, Normal e Turbo.
-- Proteções para operações avançadas, incluindo pontos de restauração quando disponíveis, snapshots e rollback para alterações reversíveis.
-- Registro técnico e possibilidade de cancelar a execução de tarefas compatíveis.
+- Consulta e gerenciamento de serviços do Windows, com prévia das alterações.
+- Diagnósticos de armazenamento, memória RAM, CPU e GPU.
+- Laudos técnicos persistentes e histórico dos diagnósticos.
+- Manutenção do Windows com DISM e SFC.
+- Registro de atividades e possibilidade de cancelar operações compatíveis.
 
-Operações como limpeza de arquivos, verificações e reparos do Windows não possuem rollback granular. A disponibilidade de pontos de restauração depende da configuração do próprio Windows. Leia as informações e confirmações apresentadas pelo aplicativo antes de executar tarefas avançadas.
+Operações como remoção de arquivos, verificações e reparos do Windows não possuem rollback granular. A disponibilidade de pontos de restauração depende da configuração do próprio Windows. Leia as informações e confirmações apresentadas pelo aplicativo antes de executar tarefas avançadas — a ideia é limpar o sistema, não fazer uma limpeza espiritual no disco inteiro.
 
 ## Versões legadas BAT
 
-As versões anteriores permanecem disponíveis para quem prefere os scripts originais:
+As versões anteriores continuam disponíveis para quem prefere os scripts originais:
 
-- **[QBoa Digital 1.0 BAT](download/qboa-digital-1.0.zip)** — versão legada para rotinas simples.
-- **[QBoa Digital 2.0 BAT](download/qboa-digital-2.0.zip)** — evolução dos scripts com rotinas adicionais de otimização.
+- **[QBoa Digital 1.0 BAT](download/qboa-digital-1.0.zip)** — rotinas simples.
+- **[QBoa Digital 2.0 BAT](download/qboa-digital-2.0.zip)** — evolução dos scripts, com rotinas adicionais de otimização.
 
-O 3.1.0 é uma nova geração do projeto, não uma descontinuação da história do BAT: mantém o propósito original em um aplicativo desktop mais integrado.
+A linha 3.x é uma nova geração do projeto, não um apagamento da história do BAT. O propósito continua o mesmo; a ferramenta é que ganhou uma casa nova.
 
 ## Repositórios
 
 - [Código-fonte do aplicativo e releases](https://github.com/bloodshinoda/qboa-digital)
-- [Repositório deste site](https://github.com/Qboadigital/qboadigital.github.io)
-
-## Política de versões
-
-A linha de versões estáveis segue uma sequência incremental:
-
-- **3.0**, **3.1**, **3.2**… para versões com novas funcionalidades e melhorias.
-- **3.0.1**, **3.0.2**… apenas para correções pontuais da versão correspondente.
+- [Repositório deste hotsite](https://github.com/qboadigital/qboadigital.github.io)
 
 ## Licenças
 
