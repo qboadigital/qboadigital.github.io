@@ -8,7 +8,8 @@ O aplicativo desktop é desenvolvido com **Tauri e Rust**. Limpeza e diagnóstic
 
 ## Situação da versão
 
-- **3.2.2 — publicada:** versão estável disponível para Windows x64.
+- **3.2.3 — publicada:** versão estável disponível para Windows x64.
+- **3.2.2 — publicada:** versão anterior, disponível no histórico de releases.
 - **3.2.1 — publicada:** versão anterior, disponível no histórico de releases.
 
 ## Roadmap — QBoa Pro 3.3
@@ -51,16 +52,27 @@ Capturas das principais áreas do QBoa Digital. As imagens preservam a transpar�
 
 ## Baixe a versão estável
 
-A **3.2.2** é a versão publicada neste momento. Escolha como prefere levar o QBoa:
+A **3.2.3** é a versão estável publicada. Escolha como prefere levar o QBoa:
 
-- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.2/qboa-digital-3.2.2-x64-installer.exe)** — instalação tradicional.
-- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.2/qboa-digital-3.2.2-x64-portable.exe)** — um executável individual, sem ZIP para descompactar.
-- [Notas e arquivos da release 3.2.2](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.2)
+- **[Baixar instalador para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.3/qboa-digital-3.2.3-x64-installer.exe)** — instalação tradicional.
+- **[Baixar versão portátil para Windows (x64)](https://github.com/bloodshinoda/qboa-digital/releases/download/v3.2.3/qboa-digital-3.2.3-x64-portable.exe)** — um executável individual, sem ZIP para descompactar.
+- [Notas e arquivos da release 3.2.3](https://github.com/bloodshinoda/qboa-digital/releases/tag/v3.2.3)
 - [Código-fonte do aplicativo](https://github.com/bloodshinoda/qboa-digital)
 
-> A 3.2.2 já está publicada. Agora sim, pode baixar sem invocar erro 404. 😉
+> A 3.2.3 já está publicada. Agora sim, pode baixar sem invocar erro 404. 😉
 
 ## Histórico de versões
+
+### 3.2.3 — Mais segurança, progresso e controle *(publicada em 11/11/2026)*
+
+- A criação do ponto de restauração acontece durante a preparação, antes de liberar o início da tarefa.
+- Se o Windows não conseguir criar o ponto, o usuário decide explicitamente se deseja prosseguir; a autorização fica vinculada à tarefa preparada, tem validade limitada e não pode ser reutilizada.
+- A proteção também contempla operações de manutenção, mantendo os diagnósticos independentes.
+- Progresso contínuo de 0% a 100% durante toda a operação, com contribuição dos percentuais reais de DISM RestoreHealth, ResetBase e SFC dentro do peso de cada etapa.
+- Falhas e cancelamentos não são apresentados como conclusão bem-sucedida.
+- Glow aplicado somente ao campo em atividade, com transição suave.
+
+**Status:** publicada. Os downloads acima já apontam para a 3.2.3.
 
 ### 3.2.2 — Mais fluidez e personalidade *(publicada em 04/11/2026)*
 
